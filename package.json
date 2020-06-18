@@ -1,0 +1,35 @@
+{
+  "name": "todos_app",
+  "version": "1.0.0",
+  "description": "\"PWA basico de bilhetes\"",
+  "main": "Index.html",
+  "scripts": {
+    "test": "echo \"Teste\"",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoaugustosilva/todosapp.git"
+  },
+  "keywords": [
+    "Note;",
+    "PWA;",
+    "UX"
+  ],
+  "author": "Bruno Augusto da Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoaugustosilva/todosapp/issues"
+  },
+  "homepage": "https://github.com/brunoaugustosilva/todosapp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "browser-sync": "^2.26.7",
+    "csscomb": "^4.3.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-csscomb": "^3.1.0",
+    "prettier": "2.0.5"
+  }
+}

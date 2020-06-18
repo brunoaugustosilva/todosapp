@@ -3,18 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso javascript</title>
+    <title>Todo's App</title>
+    <meta name="description" content="The note app" />
+    <meta name="keywords" content="note, pwa, app" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#2d89ef" />
     <link rel="stylesheet" href="./App/style/style.css" />
   </head>
   <body>
     <div id="app">
-      <h1>Todo's list</h1>
-      <ul></ul>
-      <div class="form">
-        <label for="text">Digite um todo</label>
-        <input type="text" name="text" id="text" placeholder="Digite um todo" />
-        <button>Adicionar</button>
+      <div class="languages">
+        <input id="en_us" type="radio" name="languages" value="en-US" />
+        <label for="en_us">English</label>
+        <input id="pt_br" type="radio" name="languages" value="pt-BR" />
+        <label for="pt_br">Português</label>
       </div>
+      <img src="./android-chrome-256x256.png" width="56px" height="56px" />
+      <h1>Todo's list</h1>
+      <article class="content">
+        <div class="list">
+          <ul class="list__ul"></ul>
+        </div>
+        <div class="form">
+          <label for="text">Digite um todo</label>
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Digite um todo"
+            autofocus
+            required
+            lang=""
+            title=""
+          />
+          <button>Adicionar</button>
+        </div>
+      </article>
     </div>
     <script src="./App.js"></script>
   </body>

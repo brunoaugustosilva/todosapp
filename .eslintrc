@@ -1,0 +1,7 @@
+{
+  "extends": ["wesbos"],
+  "plugins": ["styled-components-config"],
+  "rules": {
+    "no-unused-vars": 0
+  }
+}
