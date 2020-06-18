@@ -10,6 +10,8 @@ Simple note application
 
 > English, Portuguese. If you want to add any language look this example.
 
+Use the langcode [Lang Codes](http://www.lingoes.net/en/translator/langcode.htm)
+
 ```json
 "pt-BR": {
     labelCorrect: "Digite um todo",
@@ -24,6 +26,17 @@ Simple note application
         "Valores removidos com sucesso"
     ],
 }
+```
+
+Add the checkbox input
+
+```html
+<div class="languages">
+  +++
+  <input id="[lang codes]" type="radio" name="languages" value="[lang codes]" />
+  <label for="[lang codes]">Your language name</label>
+  +++
+</div>
 ```
 
 Don't forget to pull it!
@@ -67,6 +80,31 @@ Type a note
 Click in "Add"
 
 The note was added
+
+## App tips
+
+> Alert messages
+
+```js
+alertMessage("Title", "Color");
+//example alertMessage("Empty value", "red");
+```
+
+> Note colors
+
+There is a class in Javascript has represent the color of notes. Add the class in css and javascript.
+
+```js
+const CLASSES = ["purple", "yellow", "green", "lightBlue", ""];
+```
+
+CSS (Don't forget the !important)
+
+```css
+.purple {
+  background-color: #bf2b72 !important;
+}
+```
 
 ## License
 
