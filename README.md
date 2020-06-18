@@ -4,7 +4,7 @@ Created for [Bruno Augusto](http://brunoaugustosilva8.github.io)
 App represents the todo list
 Simple note application
 
-![Introduction](./App/images/introduction.png)
+![Introduction](./App/images/Introduction.png)
 
 ## Languages
 
