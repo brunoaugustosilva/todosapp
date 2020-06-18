@@ -5,7 +5,7 @@
   "main": "Index.html",
   "scripts": {
     "test": "echo \"Teste\"",
-    "start": "gulp"
+    "start": "gulp browser-sync"
   },
   "repository": {
     "type": "git",

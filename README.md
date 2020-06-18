@@ -4,37 +4,57 @@ Created for [Bruno Augusto](http://brunoaugustosilva8.github.io)
 App represents the todo list
 Simple note application
 
+![Introduction](./App/images/introduction.png)
+
 ## Languages
 
-English, Portuguese.
+> English, Portuguese. If you want to add any language look this example.
 
-![Drag Racing](./App/images/image.png)
+```json
+"pt-BR": {
+    labelCorrect: "Digite um todo",
+    labelIncorrect: "Valor repetido",
+    buttonTxt: "Adicionar",
+    inputTitle: "Insira um bilhete aqui",
+    messageTexts: [
+        "Sem valor",
+        "Valor repetido",
+        "Valor adicionado com sucesso",
+        "Valor removido com sucesso",
+        "Valores removidos com sucesso"
+    ],
+}
+```
+
+Don't forget to pull it!
 
 ## How to install
 
-Make a directory
+Fork this repository.
 
-```
+> Make a directory
+
+```bash
 mkdir [directory]
 ```
 
-Clone this repository
+> Clone this repository
 
-```
+```bash
 git clone https://github.com/brunoaugustosilva/todosapp.git
 ```
 
-Starts NPM
+> Starts NPM
 
-```
+```bash
 npm install
 ```
 
-Tests
+> Tests
 
 Run this project with:
 
-```
+```bash
 npm start
 ```
 
@@ -42,11 +62,9 @@ npm start
 
 Type a note
 
-![IMAGEM]();
+![Gif](./App/images/Example.gif)
 
 Click in "Add"
-
-![IMAGEM]();
 
 The note was added
 
