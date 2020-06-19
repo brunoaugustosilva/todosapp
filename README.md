@@ -1,6 +1,6 @@
 # TODO APP
 
-Created for [Bruno Augusto](http://brunoaugustosilva8.github.io)
+Created for [Bruno Augusto](http://brunoaugustosilva.github.io)
 App represents the todo list
 Simple note application
 

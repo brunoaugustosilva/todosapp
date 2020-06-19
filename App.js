@@ -8,6 +8,8 @@ let dragged;
 let draggedPosition;
 
 let todos = JSON.parse(localStorage.getItem('list_todos')) || [];
+
+if(localStorage.getItem("list_todos") == null) saveToStorage();
 let LANGUAGE = localStorage.getItem('language') || getLanguage();
 
 langElements.forEach((langElement) => {
@@ -68,7 +70,7 @@ function validateInput() {
     if (todoText == '') {
         alertMessage(STRING[LANGUAGE].messageTexts[0], "#ef6161");
     }
-    else if(todos.includes(todoText)){
+    else if(verifyInput(todoText)){
         alertMessage(STRING[LANGUAGE].messageTexts[1], "#bba836");
     }
     else{
@@ -115,24 +117,33 @@ inputElement.addEventListener("drop", (e) => {
 });
 
 inputElement.addEventListener("input", (e) => {
-    var label = document.querySelector(".form label");
     var inputValue = e.target.value;
 
     if(verifyInput(inputValue)){
-        label.textContent = STRING[LANGUAGE].labelIncorrect;
-        label.style.color = "#fbd208";
-        inputElement.style.borderColor = "#fbd208";
+        formInput(STRING[LANGUAGE].labelIncorrect,"#fbd208");
     }
     else{
-        label.textContent = STRING[LANGUAGE].labelCorrect;
-        label.style.color = "#fff";
-        inputElement.style.borderColor = "#fff";
+        formInput(STRING[LANGUAGE].labelCorrect, "#fff");
     }
 });
 
 function verifyInput(text){
-    return todos.includes(text);
+    for(todo of todos){
+        if(todo.toUpperCase() == text.toUpperCase()){
+            return true;
+        }
+    }
+    return false;
 }
+
+function formInput(text, color){
+    var label = document.querySelector(".form label");
+    label.textContent = text;
+    label.style.color = color;
+    inputElement.style.borderColor = color;
+    inputElement.style.color = color;
+}
+
 
 function eventDrag() {
     var itensElements = document.querySelectorAll(".list__ul li");
